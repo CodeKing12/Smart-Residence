@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <!-- owl carousel -->
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/line-awesome.min.css">
@@ -29,7 +30,7 @@
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive Stylesheet -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/responsive.css"> 
       
 
 </head>
@@ -56,7 +57,87 @@
         <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
     </form>
 </div>
-<!-- //. search Popup -->
+
+<!-- //. cart Popup -->
+<div class="cart-popup" id="cart-popup">
+    <div class="order-table table-responsive">
+        <div class="checkout-title text-center mb-0"><h6>Your Order</h6></div>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="media single-cart-product">
+                            <div class="media-left">
+                                <img src="assets/img/checkout/6.png" alt="img">
+                            </div>
+                            <div class="media-body">
+                                <span>Smart watch</span>
+                                <p>Red color</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="cart-product-price text-center">$150.00</td>
+                    <td class="text-center">
+                        <div class="quantity-wrap">
+                            <div class="quantity">
+                                <input type="number" step="1" min="0" max="100" value="1" title="Qty" class="input-text qty text">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="cart-product-price text-center">$300.00</td>
+                    <td class="text-center">
+                        <div class="cart-close">
+                            <span class="ti-close"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="media single-cart-product">
+                            <div class="media-left">
+                                <img src="assets/img/checkout/6.png" alt="img">
+                            </div>
+                            <div class="media-body">
+                                <span>Smart watch</span>
+                                <p>Red color</p>
+                            </div>
+                        </div>
+                    </td>
+                    <td class="cart-product-price text-center">$150.00</td>
+                    <td class="text-center">
+                        <div class="quantity-wrap">
+                            <div class="quantity">
+                                <input type="number" step="1" min="0" max="100" value="1" title="Qty" class="input-text qty text">
+                            </div>
+                        </div>
+                    </td>
+                    <td class="cart-product-price text-center">$300.00</td>
+                    <td class="text-center">
+                        <div class="cart-close">
+                            <span class="ti-close"></span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="total-shapping-area-wrap">
+            <div class="total-shapping-area">
+                <div class="charge">
+                    <span>Shipping Charge:</span>
+                    <span class="amount float-right">$1.00</span>
+                </div>
+                <div class="total-amount">
+                    <span>Total:</span>
+                    <span class="amount float-right">$451.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="btn-wrapper text-center pd-top-170">
+            <a class="btn btn-green" href="checkout.html">Proceed to Checkout</a>
+        </div>
+    </div>
+</div>
+<!-- //. cart Popup -->
 
 <!-- navbar area start -->
 <nav class="navbar navbar-area navbar-expand-lg nav-style-01 nav-style-02">
@@ -232,10 +313,10 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="breadcrumb-inner">
-                    <h1 class="page-title">Shop</h1>
+                    <h1 class="page-title">Shop Details</h1>
                     <ul class="page-list">
                         <li><a href="index.html">Home</a></li>
-                        <li>Shop</li>
+                        <li>Shop Details</li>
                     </ul>
                 </div>
             </div>
@@ -244,33 +325,179 @@
 </div>
 <!-- breadcrumb area End -->
 
-<div class="shop-page-area pd-top-120">
+<div class="single-product-area pd-top-120">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="woocommerce-result-count">Showing 1–12 of 25 results</div>
+       <div class="row">
+            <div class="col-lg-7">
+                <div class="product-thumbnail-wrapper">
+                    <div class="row custom-gutters-16">
+                        <div class="col-3">
+                            <div class="product-thumbnail-carousel">
+                                <div class="single-thumbnail-item">
+                                    <img src="assets/img/shop/address-1.jpeg" alt="shop">
+                                </div>
+                                <div class="single-thumbnail-item">
+                                    <img src="assets/img/shop/address-2.jpeg" alt="shop">
+                                </div>
+                                <div class="single-thumbnail-item">
+                                    <img src="assets/img/shop/address-3.jpeg" alt="shop">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="single-thumbnail-slider">
+                                <div class="slider-item">
+                                    <img src="assets/img/shop/address-1.jpeg" alt="shop">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="assets/img/shop/address-2.jpeg" alt="shop">
+                                </div>
+                                <div class="slider-item">
+                                    <img src="assets/img/shop/address-3.jpeg" alt="shop">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6 mg-bottom-30">
-                <select class="select woocommerce-sorting-select float-sm-right">
-                  <option value="1">Default sorting</option>
-                  <option value="2">Sort by latest</option>
-                  <option value="3">Sort by rating</option>
-                </select>
+            <div class="col-lg-5">
+                <div class="product-description">
+                    <!--<span class="customer-review"><i class="fa fa-star"></i>4.8 <span>(10 Customer review)</span></span>-->
+                    <h4 class="title">Metallic Bronze Address Plate</h4>
+                    <div class="price">
+                        <span>&#8358;10,000</span>
+                        <del>&#8358;20,000</del>
+                    </div>
+                    <p class="content">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                    <div class="quantity-wrap">
+                        <div class="quantity float-left">
+                            <input type="number" step="1" min="0" max="100" value="1" title="Qty" class="input-text qty text">
+                        </div>
+                        <button class="btn btn-gray ml-xl-5 ml-sm-4 cart-btn" type="button" id="cart-btn">Add to cart <i class="fa fa-shopping-cart"></i></button>
+                    </div>
+                    <span class="d-block check-box-area">
+                        <input id="1checkbox" type="checkbox">
+                        <label for="1checkbox">I Agree with the terms and conditions</label>
+                    </span>
+                    <div class="row">
+                        <div class="col-sm-6 col-7">
+                            <button class="w-100 btn btn-gray" type="button">Buy it now</button>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <span>Category: </span>
+                        <a href="shop-details.html#">Address Plates</a>
+                    </div>
+                    <div class="tags">
+                        <span>Tag: </span>
+                        <a href="shop-details.html#">Address,</a>
+                        <a href="shop-details.html#">Location,</a>
+                        <a href="shop-details.html#">House</a>
+                    </div>
+                </div>
             </div>
+            <div class="col-lg-12">
+                <div class="product-information">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="descr-tab" data-toggle="tab" href="shop-details.html#descr" role="tab" aria-controls="descr" aria-selected="true">Description</a>
+                        </li>
+                        <!--<li class="nav-item">
+                            <a class="nav-link" id="reviews-tab" data-toggle="tab" href="shop-details.html#reviews" role="tab" aria-controls="reviews" aria-selected="false">Reviews</a>
+                        </li>-->
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="descr" role="tabpanel" aria-labelledby="descr-tab">
+                            <div class="row">
+                                <div class="col-lg-11">
+                                    <div class="description-tab-content">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                        <p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                            <div class="row">
+                                <div class="col-lg-10">
+                                    <div class="review-area">
+                                        <h6 class="review-title">Reviews (32)</h6>
+                                        <div class="single-review">
+                                            <div class="media">
+                                                <img class="media-left" src="assets/img/blog/comments/1.png" alt="img">
+                                                <div class="media-body">
+                                                    <span>Jabel Ali</span>
+                                                    <p>CEO</p>
+                                                </div>
+                                            </div>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                        </div>
+                                    </div>
+                                    <div class="review-area">
+                                        <div class="single-review">
+                                            <div class="media">
+                                                <img class="media-left" src="assets/img/blog/comments/1.png" alt="img">
+                                                <div class="media-body">
+                                                    <span>Jabel Ali</span>
+                                                    <p>CEO</p>
+                                                </div>
+                                            </div>
+                                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h6 class="review-title">Your Reviews</h6>
+                            <form class="riyaqas-form-wrap">
+                                <div class="row custom-gutters-16">
+                                    <div class="col-md-6">
+                                        <div class="single-input-wrap">
+                                            <textarea class="single-input textarea" cols="20"></textarea>
+                                            <label class="single-input-label">Review</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="single-input-wrap">
+                                            <input type="text" class="single-input">
+                                            <label>Name</label>
+                                        </div>
+                                        <div class="single-input-wrap">
+                                            <input type="text" class="single-input">
+                                            <label>E-mail</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 text-right">
+                                        <a class="btn btn-green" href="shop-details.html#">Submit</a>
+                                    </div> 
+                                </div>
+                            </form>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+
+<div class="shop-page-area single-shop-related-product mg-top-105">
+    <div class="container">
+        <div class="section-title">
+            <h2 class="title">Related Products</h2>
         </div>
         <div class="row custom-gutters-16">
             <div class="col-lg-3 col-sm-6">
                 <div class="single-shop">
                     <div class="thumb">
-                        <img src="assets/img/shop/address-1.jpeg" alt="shop">
+                        <a class="product-badge btn-blue" href="shop-details.html#">New</a>
+                        <img src="assets/img/shop/address-3.jpeg" alt="shop">
                         <div class="cart-btn">
                             <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
+                                <a class="btn btn-red" href="shop-details.html#">Add to card <i class="fa fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="content">
-                        <a href="shop-details.html">Metallic Bronze Address Plate</a>
+                        <a href="shop-details.html#">Squircle Glass Address Plate</a>
                         <div class="price">
                             <span>&#8358;10,000</span><del>&#8358;19,000</del>
                         </div>
@@ -280,52 +507,15 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="single-shop">
                     <div class="thumb">
-                        <a class="product-badge btn-blue" href="shop.html#">New</a>
-                        <img src="assets/img/shop/address-4.jpeg" alt="shop">
+                        <img src="assets/img/shop/address-2.jpeg" alt="shop">
                         <div class="cart-btn">
                             <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
+                                <a class="btn btn-red" href="shop-details.html#">Add to card <i class="fa fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="content">
-                        <a href="shop-details.html">Iron House Numbering Plate</a>
-                        <div class="price">
-                            <span>&#8358;10,000</span><del>&#8358;12,000</del>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-shop">
-                    <div class="thumb">
-                        <img src="assets/img/shop/address-3.jpeg" alt="shop">
-                        <div class="cart-btn">
-                            <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <a href="shop-details.html">Squircle Glass Address Plate</a>
-                        <div class="price">
-                            <span>&#8358;10,000</span><del>&#8358;16,500</del>
-                        </div>
-                    </div>
-                </div>
-            </div>  
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-shop">
-                    <div class="thumb">
-                        <img src="assets/img/shop/address-1.jpeg" alt="shop">
-                        <div class="cart-btn">
-                            <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <a href="shop-details.html">Metallic Bronze Address Plate</a>
+                        <a href="shop-details.html#">Plastic Rim Address Plate</a>
                         <div class="price">
                             <span>&#8358;10,000</span><del>&#8358;19,000</del>
                         </div>
@@ -335,90 +525,17 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="single-shop">
                     <div class="thumb">
-                        <a class="product-badge btn-blue" href="shop.html#">New</a>
-                        <img src="assets/img/shop/address-2.jpeg" alt="shop">
-                        <div class="cart-btn">
-                            <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <a href="shop-details.html">Plastic Rim Address Plate</a>
-                        <div class="price">
-                            <span>&#8358;10,000</span><del>&#8358;21,000</del>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-shop">
-                    <div class="thumb">
-                        <img src="assets/img/shop/address-3.jpeg" alt="shop">
-                        <div class="cart-btn">
-                            <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <a href="shop-details.html">Squircle Glass Address Plate</a>
-                        <div class="price">
-                            <span>&#8358;10,000</span><del>&#8358;16,500</del>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-shop">
-                    <div class="thumb">
-                        <img src="assets/img/shop/address-2.jpeg" alt="shop">
-                        <div class="cart-btn">
-                            <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <a href="shop-details.html">Plastic Rim Address Plate</a>
-                        <div class="price">
-                            <span>&#8358;10,000</span><del>&#8358;21,000</del>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-shop">
-                    <div class="thumb">
-                        <img src="assets/img/shop/address-4.jpeg" alt="shop">
-                        <div class="cart-btn">
-                            <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <a href="shop-details.html">Iron House Numbering Plate</a>
-                        <div class="price">
-                            <span>&#8358;10,000</span><del>&#8358;12,000</del>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--<div class="col-lg-3 col-sm-6">
-                <div class="single-shop">
-                    <div class="thumb">
                         <img src="assets/img/shop/address-1.jpeg" alt="shop">
                         <div class="cart-btn">
                             <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
+                                <a class="btn btn-red" href="shop-details.html#">Add to card <i class="fa fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="content">
-                        <a href="shop-details.html">Stylish Watch Red color</a>
+                        <a href="shop-details.html#">Metallic Bronze Address Plate</a>
                         <div class="price">
-                            <span>$160.00</span>
+                            <span>&#8358;10,000</span><del>&#8358;19,000</del>
                         </div>
                     </div>
                 </div>
@@ -426,70 +543,23 @@
             <div class="col-lg-3 col-sm-6">
                 <div class="single-shop">
                     <div class="thumb">
-                        <img src="assets/img/shop/address-3.jpeg" alt="shop">
-                        <div class="cart-btn">
-                            <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <a href="shop-details.html">Stylish Watch Red color</a>
-                        <div class="price">
-                            <span>$160.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-shop">
-                    <div class="thumb">
-                        <a class="product-badge btn-blue" href="shop.html#">New</a>
                         <img src="assets/img/shop/address-4.jpeg" alt="shop">
                         <div class="cart-btn">
                             <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
+                                <a class="btn btn-red" href="shop-details.html#">Add to card <i class="fa fa-shopping-cart"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="content">
-                        <a href="shop-details.html">Stylish Watch Red color</a>
+                        <a href="shop-details.html#">Iron House Numbering Plate</a>
                         <div class="price">
-                            <span>$160.00</span>
+                            <span>&#8358;10,000</span><del>&#8358;19,000</del>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="single-shop">
-                    <div class="thumb">
-                        <img src="assets/img/shop/address-2.jpeg" alt="shop">
-                        <div class="cart-btn">
-                            <div class="cart-btn-wrap">
-                                <a class="btn btn-red" href="shop.html#">Add to Cart <i class="fa fa-shopping-cart"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <a href="shop-details.html">Stylish Watch Red color</a>
-                        <div class="price">
-                            <span>$160.00</span>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
         </div>
     </div>
-</div>
-
-<div class="riyaqas-pagination text-center mg-top-45">
-    <ul>
-        <li><a class="prev page-numbers" href="shop.html#"><i class="ti-angle-left"></i></a></li>
-        <li><span class="page-numbers">1</span></li>
-        <li><span class="page-numbers current">2</span></li>
-        <li><a class="page-numbers" href="shop.html#">3</a></li>
-        <li><a class="next page-numbers" href="shop.html#"><i class="ti-angle-right"></i></a></li>
-    </ul>                          
 </div>
 
 <!-- footer area start -->
@@ -607,7 +677,6 @@
 </div>
 <!-- back to top area end -->
 
-
     <!-- jquery -->
     <script src="assets/js/jquery-2.2.4.min.js"></script>
     <!-- popper -->
@@ -618,10 +687,10 @@
     <script src="assets/js/jquery.magnific-popup.js"></script>
     <!-- wow -->
     <script src="assets/js/wow.min.js"></script>
-    <!-- owl carousel -->
+    <!-- slider js -->
     <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- cssslider slider -->
     <script src="assets/js/jquery.cssslider.min.js"></script>
+    <script src="assets/js/slick.js"></script>
     <!-- waypoint -->
     <script src="assets/js/waypoints.min.js"></script>
     <!-- counterup -->
