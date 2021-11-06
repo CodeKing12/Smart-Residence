@@ -7495,3 +7495,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     padding-bottom: unset !important;
   }
 }
+
+.br-ed{
+  display: block !important;
+}
