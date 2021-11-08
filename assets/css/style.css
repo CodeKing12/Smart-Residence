@@ -7499,3 +7499,12 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 .br-ed{
   display: block !important;
 }
+
+.single-shop .thumb img {
+  height: 190px;
+}
+
+.lessogo {
+  width: 40px;
+  height: 40px;
+}
