@@ -7539,6 +7539,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   }
 }
 
-.mejs_inner {
+.mejs__inner {
   display: none;
+}
+
+#mep_0 {
+  width: 100% !important;
 }
