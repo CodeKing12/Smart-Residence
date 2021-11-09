@@ -733,3 +733,23 @@
 
 
 })(jQuery);
+
+let theMarg
+
+if (window.innerWidth < 450) {
+    theMarg = window.innerHeight;
+} else if (window.innerWidth > 450 && window.innerWidth < 767) {
+    theMarg = window.innerHeight * 0.85
+} else if (window.innerWidth > 767) {
+    vidHeight = document.getElementById('myVideo').clientHeight;
+//    theHeight = document.getElementById('goBelow').clientHeight;
+    downlow = document.getElementById('bellow').clientHeight;
+    overp = document.getElementById('op').offsetHeight;
+    theMarg = vidHeight + downlow
+    console.log(overp)
+    console.log(downlow)
+    console.log(window.innerHeight)
+}
+
+pushDown = document.getElementById('pushIt').style.marginTop = theMarg + 'px'
+console.log(theMarg + 'ps')

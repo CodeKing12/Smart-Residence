@@ -7509,14 +7509,6 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   height: 40px;
 }
 
-#myVideo {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: auto;
-}
-
 .headerlay {
   position: absolute;
   top: 0;
@@ -7551,6 +7543,126 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   width: 100% !important;
 }
 
-.save-me {
-  margin-bottom: 720px;
+#myVideo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 1000px) {
+  #myVideo {
+    max-height: 600px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main-logo {display: none;}
+  .responsive-mobile-menu .nav-right-content {margin-right: 58px !important;}
+}
+
+.main-logo, .sticky-logo {
+  font-size: 21px !important;
+}
+
+@media (min-width: 471px) and (max-width: 600px) {
+  .main-logo, .sticky-logo {
+    font-size: 18px !important;
+  }
+}
+
+.main-logo span, .sticky-logo span {
+  color: #F9556D !important;
+}
+
+@media (max-width: 700px) {
+  #myVideo {
+    width: 100vw;
+    height: 88.3vh;
+    object-fit: cover;
+    margin-top: -8.2vh;
+  }
+
+  .headerlay {
+    width: 100vw;
+    height: 80vh !important;
+  }
+
+  .save-me {
+    margin-bottom: unset;
+  }
+
+  .service-area {
+    margin-top: unset;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  #myVideo {
+    width: 100vw;
+    margin-top: -8.4vh;
+    height: 88.5vh;
+    max-height: unset !important;
+    object-fit: cover;
+  }
+
+  .headerlay {
+    width: 100vw;
+    height: 80vh !important;
+  }
+
+  .save-me {
+    margin-bottom: unset;
+  }
+
+  .service-area {
+    margin-top: -25px;
+  }
+}
+
+@media (min-width: 1101px){
+  #myVideo {
+    width: 100vw;
+    margin-top: -8.4vh;
+    height: 94.5vh !important;
+    max-height: unset !important;
+    object-fit: cover;
+  }
+
+  .headerlay {
+    width: 100vw;
+    height: 86vh !important;
+  }
+
+  .save-me {
+    margin-bottom: unset;
+  }
+
+  .service-area {
+    margin-top: -25px;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .headerlay > div.container {
+    margin-top: -10px;
+  }
+
+  #myVideo {
+    margin-top: -8.4vh;
+    height: 108.5vh;
+  }
+
+  .headerlay {
+    height: 100vh !important;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .service-area {
+    margin-top: -60px;
+  }
 }
