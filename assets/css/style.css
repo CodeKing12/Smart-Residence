@@ -7543,6 +7543,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: none;
 }
 
+.mejs__layers > div {
+  width: 100% !important;
+}
+
 #mep_0 {
   width: 100% !important;
 }
