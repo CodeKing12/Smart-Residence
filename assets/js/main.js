@@ -751,5 +751,5 @@ if (window.innerWidth < 450) {
     console.log(window.innerHeight)
 }
 
-pushDown = document.getElementById('pushIt').style.marginTop = theMarg + 'px'
+pushDown = document.getElementById('pushIt').style.marginBottom = theMarg + 'px'
 console.log(theMarg + 'ps')
