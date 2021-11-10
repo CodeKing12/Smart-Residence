@@ -7666,3 +7666,8 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     margin-top: -60px;
   }
 }
+
+.owl-nav img {
+  width: 38px;
+  height: auto;
+}

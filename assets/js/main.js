@@ -259,7 +259,7 @@
                 dots: false,
                 nav: true,
                 smartSpeed: 1000,
-                navText:['<img src="assets/img/startup/left.svg" alt="arrow">','<img src="assets/img/startup/right.svg" alt="arrow">'],
+                navText:['<img class="mt-1" src="assets/img/shaded-left.png" alt="arrow">','<img class="mt-1" src="assets/img/shaded-right.png" alt="arrow">'],
                 responsive: {
                     0: {
                         items: 1
