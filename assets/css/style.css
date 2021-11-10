@@ -7668,6 +7668,30 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 }
 
 .owl-nav img {
-  width: 38px;
+  width: 38px !important;
   height: auto;
+}
+
+@media (max-width: 767px) {
+  .screenshot-slider .thumb {
+    margin: 15px 15px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 999px) {
+  .screenshot-slider .thumb {
+    margin: 20px 20px;
+  }
+}
+
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .screenshot-slider .thumb {
+    margin: 15px 17px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .screenshot-slider .thumb {
+    margin: 15px 20px;
+  }
 }

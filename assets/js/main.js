@@ -746,10 +746,23 @@ if (window.innerWidth < 450) {
     downlow = document.getElementById('bellow').clientHeight;
     overp = document.getElementById('op').offsetHeight;
     theMarg = vidHeight + downlow
-    console.log(overp)
+    /*console.log(overp)
     console.log(downlow)
-    console.log(window.innerHeight)
+    console.log(window.innerHeight)*/
 }
 
 pushDown = document.getElementById('pushIt').style.marginBottom = theMarg + 'px'
-console.log(theMarg + 'ps')
+//console.log(theMarg + 'ps')
+
+framelement = document.getElementById("slideon");
+frame = window.getComputedStyle(framelement, '::after').backgroundSize;
+shotImages = document.getElementsByClassName('app-shots');
+for (let i=0;i<shotImages.length;i++) {
+    if (frame = '100%') {
+        shotImages[i].style.height = frame
+    } else {
+        shotImages[i].style.height = frame + 'px'
+    }
+}
+
+console.log(frame)
