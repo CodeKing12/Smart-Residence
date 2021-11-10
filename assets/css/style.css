@@ -7680,18 +7680,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 
 @media (min-width: 768px) and (max-width: 999px) {
   .screenshot-slider .thumb {
-    margin: 20px 20px;
+    margin: 20px 20px !important;
   }
 }
 
 @media (min-width: 1000px) and (max-width: 1200px) {
   .screenshot-slider .thumb {
-    margin: 15px 17px;
+    margin: 15px 17px !important;
   }
 }
 
 @media (min-width: 1201px) {
   .screenshot-slider .thumb {
-    margin: 15px 20px;
+    margin: 15px 10px;
+    -webkit-margin: 15px 10px !important;
+    background-repeat: round;
   }
 }
